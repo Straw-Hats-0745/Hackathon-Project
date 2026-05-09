@@ -21,7 +21,7 @@ session_start();
 
 			<input type="submit" name="login" value="Login" class="btn">
 
-			<div class="signup">Don't have an account? <a href="http://localhost/fyc/signin/signin.php" class="link">Sign up here</a></div>		
+			<div class="signup">Don't have an account? <a href="signin.php" class="link">Sign up here</a></div>		
 		</div>
 	</form>
 </body>		
@@ -47,7 +47,7 @@ session_start();
  		if($total==1)
  		{
 		    $_SESSION['username'] = $username;
-		    header('Location:practice.php');
+		    header('Location:display.php');
  		}
  		else
  		{
